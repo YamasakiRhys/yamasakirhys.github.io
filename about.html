@@ -4,17 +4,7 @@
 <script type="text/javascript">
     var _paq = window._paq = window._paq || [];
     /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
-    _paq.push(['setDocumentTitle', document.title]);
-    _paq.push(['trackPageView']);
-    _paq.push(['trackAllContentImpressions']);
-    _paq.push(['enableLinkTracking']);
-    (function() {
-      var u="https://sachinhulawale.matomo.cloud/";
-      _paq.push(['setTrackerUrl', u+'matomo.php']);
-      _paq.push(['setSiteId', '3']);
-      var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-      g.type='text/javascript'; g.async=true; g.src='//cdn.matomo.cloud/sachinhulawale.matomo.cloud/matomo.js'; s.parentNode.insertBefore(g,s);
-  function getPerfStats() {
+    function getPerfStats() {
     var timing = window.performance.timing;
     return {
       dns: timing.domainLookupEnd - timing.domainLookupStart,
@@ -33,7 +23,23 @@
       _paq.push(['setCustomVariable', 4, 'Network-BasePage', ntStats.basePage, 'page']);
       _paq.push(['setCustomVariable', 5, 'Network-FrontEnd', ntStats.frontEnd, 'page']);
     }
+    console.log("DNS: " + ntStats.dns);
+    console.log("Network-Connect: " + ntStats.connect);
+    console.log("Network-TTFB: " + ntStats.ttfb);
+    console.log("Network-BasePage: " + ntStats.basePage);
+    console.log("Network-FrontEnd: " + ntStats.frontEnd);
   };
+    _paq.push(['setDocumentTitle', document.title]);
+    _paq.push(['trackPageView']);
+    _paq.push(['trackAllContentImpressions']);
+    _paq.push(['enableLinkTracking']);
+    (function() {
+      var u="https://sachinhulawale.matomo.cloud/";
+      _paq.push(['setTrackerUrl', u+'matomo.php']);
+      _paq.push(['setSiteId', '3']);
+      var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+      g.type='text/javascript'; g.async=true; g.src='//cdn.matomo.cloud/sachinhulawale.matomo.cloud/matomo.js'; s.parentNode.insertBefore(g,s);
+  
     })();
   </script>
   <!-- End Matomo Code -->
