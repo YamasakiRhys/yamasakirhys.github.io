@@ -35,6 +35,7 @@ document.cookie = 'cookie1=value1; SameSite=None; Secure';
   //   console.log(_paq);
   // };
   var ntStats = getPerfStats();
+    _paq.push(['setSecureCookie', true]);
     _paq.push(['setDocumentTitle', document.title]);
     _paq.push(['setCustomVariable', 1, 'Network-DNS', ntStats.dns, 'page']);
     _paq.push(['setCustomVariable', 2, 'Network-Connect', ntStats.connect, 'page']);
