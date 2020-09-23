@@ -39,7 +39,7 @@ document.cookie = 'zenMode=value1; SameSite=None; Secure';
 var entry = perfEntries[0];
 var json = entry.toJSON();
 var s = JSON.stringify(json);
-console.log(s);
+console.log('S: '+ s);
 _paq.push(['setCustomDimension', 3, s]);
     _paq.push(['trackPageView']);
     _paq.push(['trackAllContentImpressions']);
