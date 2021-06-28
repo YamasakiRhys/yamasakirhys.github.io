@@ -27,7 +27,7 @@ window.dispatchEvent(new Event(locationChangeEventType));
 });
 });
 }
- _paq.push(['enableJSErrorTracking']); 
+_paq.push(['enableJSErrorTracking']);
 var currentUrl = location.href;
 var newUrl = location.href;
 observeUrlChanges((loc) => {
