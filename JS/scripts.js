@@ -56,3 +56,5 @@ function buttonPress(){
     console.lot(error);
 }
 
+
+setTimeout(function() { notExistingFunction(); }, 0);
