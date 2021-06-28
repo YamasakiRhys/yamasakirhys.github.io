@@ -41,7 +41,7 @@ currentUrl = location.href;
 _paq.push(['enableLinkTracking']);
 
 (function() {
-var u="//usql119.spe.sony.com:1024/";
+var u="//usql119.spe.sony.com/";
 _paq.push(['setTrackerUrl', u+'matomo.php']);
 // _paq.push(['setSiteId', window.matomoSiteId]);
 _paq.push(['setSiteId', '4']);
