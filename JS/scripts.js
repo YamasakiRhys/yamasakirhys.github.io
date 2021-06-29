@@ -1,3 +1,11 @@
+function buttonPress(){ 
+    console.log("test");
+    console.lot(error);
+}
+
+setTimeout(function() { notExistingFunction(); }, 100);
+
+
 var _paq = window._paq = window._paq || [];
 /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
 /*SPA tracking code*/
@@ -51,10 +59,4 @@ g.type='text/javascript'; g.async=true; g.src=u+'matomo.js'; s.parentNode.insert
 /* <!-- End Matomo Code */
 
 
-function buttonPress(){ 
-    console.log("test");
-    console.lot(error);
-}
 
-
-setTimeout(function() { notExistingFunction(); }, 0);
